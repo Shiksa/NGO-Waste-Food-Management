@@ -1,0 +1,40 @@
+.navbar{
+    background-color: #9BDBA6;
+}
+
+.nav-item{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-style: italic;
+    padding-left:10px ;
+    padding-right: 10px;
+    
+}
+
+.nav-item:hover{
+    background-color:darkseagreen;
+    border-radius: 10px;
+}
+
+.navbar-nav{
+    padding-left: 50px;
+}
+/* .impo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.navbar-brand{
+    padding-left: 10px;
+}
+
+.d-flex{
+    padding-right: 100px;
+}
+
+.form-control{
+    border-radius: 30px;
+}
+.btn{
+    border-radius: 30px;
+}
