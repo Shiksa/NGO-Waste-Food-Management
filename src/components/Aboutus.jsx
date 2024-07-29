@@ -1,4 +1,4 @@
-import React, { useEffect,useState }  from 'react'
+import React, { useEffect, useState } from 'react'
 // import hero from './image/hero.jpg'
 import './style/Aboutus.css'
 import CountUp from 'react-countup';
@@ -40,6 +40,7 @@ function Aboutus() {
 
     return (
         <>
+
             <div className="hero">
                 {/* <img src={hero} alt="Hero" /> */}
                 <div className="hero-content">
@@ -78,39 +79,38 @@ function Aboutus() {
             </div>
 
 
-            <div className="mt-8 sm:mt-12">
-                <dl className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-                    <div className="flex flex-col rounded-lg bg-blue-50 px-4 py-8 text-center">
-                        <dt className="order-last text-lg font-medium text-gray-500">
-                            Total Donations
-                        </dt>
-
-                        <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
-                            {isVisible && <CountUp start={0} end={100} duration={2} separator="," />}M
-                        </dd>
-                    </div>
-
-
-                    <div className="flex flex-col rounded-lg bg-blue-50 px-4 py-8 text-center">
-                        <dt className="order-last text-lg font-medium text-gray-500">
-                            Animal Donation
-                        </dt>
-
-                        <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
-                            {isVisible && <CountUp start={0} end={51} duration={2} separator="," />}M
-                        </dd>
-                    </div>
-
-                    <div className="flex flex-col rounded-lg bg-blue-50 px-4 py-8 text-center">
-                        <dt className="order-last text-lg font-medium text-gray-500">
-                            Total Doners
-                        </dt>
-
-                        <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
-                            {isVisible && <CountUp start={0} end={81} duration={2} separator="," />}M
-                        </dd>
-                    </div>
-                </dl>
+            <div className='tag'>
+                <h4 className='tag-head'>Total Donations</h4>
+                <div className='tag-no'><CountUp
+                    className="account-balance"
+                    start={0}
+                    end={45000}
+                    duration={3}
+                    useEasing={true}
+                    separator=","
+                />Kg</div>
+            </div>
+            <div className='tag'>
+                <h4 className='tag-head'>Total Donors</h4>
+                <div className='tag-no'><CountUp
+                    className="account-balance"
+                    start={0}
+                    end={500}
+                    duration={3}
+                    useEasing={true}
+                    separator=","
+                />M</div>
+            </div>
+            <div className='tag'>
+                <h4 className='tag-head'>Happy Faces</h4>
+                <div className='tag-no'><CountUp
+                    className="account-balance"
+                    start={0}
+                    end={800}
+                    duration={3}
+                    useEasing={true}
+                    separator=","
+                />M</div>
             </div>
 
 

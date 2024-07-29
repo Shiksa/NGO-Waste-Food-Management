@@ -71,3 +71,10 @@
     display: flex;
     max-width: 65.66%;
 }
+
+.tag{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    padding-bottom: 80px;
+}
